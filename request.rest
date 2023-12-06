@@ -1,0 +1,34 @@
+GET http://localhost:5000/users
+
+
+###
+//get single id
+GET http://localhost:5000/users/2c360d2a-a458-4161-a725-60314f99fece
+
+
+###
+//create a user
+post  http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": " zakiiii  update" ,
+    "email": "user100@gmail.com",
+    "password": "12345678",
+    "confPassword": "12345678",
+    "role": "user"
+}
+
+
+
+###
+delete http://localhost:5000/users/14fcc5a3-ea02-4077-acc6-1cedca7c2
+
+###
+post http://localhost:5000/login
+
+{
+     "email": "user10@gmail.com",
+    "password": "12345678",
+
+}
