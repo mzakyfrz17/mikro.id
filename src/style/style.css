@@ -11,27 +11,30 @@ body {
     padding :0;
     }
 
-header {
-    background-color: #FFFFFF;
-    color: #000000;
-    padding: 10px;
+.navbar {
     display: flex;
+    height:5rem;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 }
 
-button {
-    background-color: #FDD486;
+button, .button {
+    background-color: #ECE7B4;
     border: none;
+    padding-inline: 5px;
     
+}
+
+.btn-primer{
+    background-color: #9EB384 !important;
+    border: none;
 }
 
 input[type=search]
 {
-  margin-left: 70px;
-  margin-bottom: 10px;
-  width: 600px;
-  background-color: #FDD486;
+  width:80%;
+  background-color: #FAF1E4;
 }
 
 nav {
@@ -50,20 +53,29 @@ nav a:hover {
     background-color: #f7f3f3;
 }
 
-.jumbroton {
-    background-color: #5CC039;
+.jumbotron{
+    background-color: #9EB384;
     overflow: hidden;
+    padding: 35px;
 }
 
-.text-jumbroton {
-    margin-left: 70px;
-    margin-top: 30px;
+.img-icon{
+    width: 500px;
+    height: auto;
+    float:right;
+
 }
 
-.ikon {
-    float: right;
+.about-us{
+    background-color: #9eb3849a;
+    border-top-right-radius:4rem;
+    border-top-left-radius:4rem;
+    width: 100%;
 }
 
+.about-us .container{
+    width:60%;
+}
 
 .image-container {
     display: flex;
@@ -80,10 +92,10 @@ nav a:hover {
 .button-container {
     text-align: center;
     margin-top: 10px;
-    background-color: #E5B048;
+    background-color: #ECE7B4;
     border-radius: 10px;
     width: 200px;
-    margin-left: 25px;
+    padding-inline: 5px;
 }
 
 .profile-img {
@@ -97,19 +109,25 @@ nav a:hover {
     align-items: center;
     }
 
-.kotak {
-    border: 1px solid #ccc;
-    padding: 12px;
-    height: 45px;
-    padding-bottom: 30px;
-    }
+.ini-kotak{
+    gap:7px;
+}
 
-    
+.ini-kotak .kotak{
+    background-color:#ECE7B4 ;
+    padding-inline:5px;
+    margin-bottom: 0;
+
+}
+
 .footer {
-    background-color: #5CC039;
+    background-color: #9EB384;
     width: 100%;
     background-size: cover;
     max-height: 90vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 .footer ul {
@@ -124,4 +142,8 @@ nav a:hover {
 
 .hak-cipta {
     background-color: #363636;
+}
+
+.hak-cipta p{
+    margin-block: auto;
 }
