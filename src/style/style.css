@@ -9,6 +9,7 @@ body {
 *{
     margin :0;
     padding :0;
+    font-family: 'Poppins', sans-serif;
     }
 
 .navbar {
@@ -57,10 +58,12 @@ nav a:hover {
     background-color: #9EB384;
     overflow: hidden;
     padding: 35px;
+    width: 100%;
 }
 
 .img-icon{
     width: 500px;
+    max-width:100%;
     height: auto;
     float:right;
 
@@ -74,7 +77,8 @@ nav a:hover {
 }
 
 .about-us .container{
-    width:60%;
+    width:100%;
+    padding: 30px;
 }
 
 .image-container {
@@ -111,6 +115,7 @@ nav a:hover {
 
 .ini-kotak{
     gap:7px;
+    width: 100%;
 }
 
 .ini-kotak .kotak{
@@ -118,6 +123,14 @@ nav a:hover {
     padding-inline:5px;
     margin-bottom: 0;
 
+}
+
+.detail-img{
+    width:100%;   
+}
+
+#detail1{
+width: 100%;
 }
 
 .footer {
@@ -147,3 +160,16 @@ nav a:hover {
 .hak-cipta p{
     margin-block: auto;
 }
+
+.popup{
+    background-color: #EFEFEF;
+    width: 400px;
+    height: 463px;
+    border-radius: 15px;
+    padding:20px;
+    padding-top:30px;
+    position:absolute;
+    margin-left:70%;
+    position: fixed;
+}
+

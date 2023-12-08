@@ -7,7 +7,7 @@ const Hero = () => {
         <div class="jumbotron">
         <div class="row">
           <div class="col-md-6 col-sm-12 align-self-center">
-            <p class="text-jumbroton">Halo Selamat Datang</p>
+            <p class="text-muted text-jumbroton">Halo Selamat Datang</p>
             <h1 class="fw-bold text-jumbroton">Temukan Lapak <br/> Murah dan Mudah</h1>
             <p class="text-jumbroton">Tempatkan bisnis anda di pusat perhatian. <br/>
               Mulailah perjalanan anda menuju kesuksesan sekarang!</p>

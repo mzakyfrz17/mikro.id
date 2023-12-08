@@ -4,22 +4,24 @@ import gambar3 from '../assets/images/Gambar 3.png';
 import gambar2 from '../assets/images/Gambar 2.png';
 import gambar1 from '../assets/images/Gambar 1.png';
 import user from '../assets/images/pengguna.png';
+import WhatsappButton from "./Whatsapp-button";
+import '../style/style.css';
 
 const Detail = () => {
     return(
     <div class="container mt-5">
         <div class="row">
-          <div class="col-md-8 ">
-              <Image src={gambar3} class="img-fluid" alt="Gambar Kiri"/>
+          <div class="col-lg-8 col-md-10 col-sm-12 ">
+              <Image src={gambar3} class="detail-img" id="detail1" alt="Gambar Kiri"/>
           </div>
   
-          <div class="col-md-4">
+          <div class="col-md-4 mt-3">
               <div class="row">
                   <div class="col-md-12 mb-2">
-                      <img src={gambar1} class="img-fluid" alt="Gambar Kanan 1"/>
+                      <img src={gambar1} class="detail-img" alt="Gambar Kanan 1"/>
                   </div>
                   <div class="col-md-12">
-                      <img src={gambar2} class="img-fluid" alt="Gambar Kanan 2"/>
+                      <img src={gambar2} class="detail-img" alt="Gambar Kanan 2"/>
                   </div>
               </div>
           </div>
@@ -27,7 +29,7 @@ const Detail = () => {
   
         <div class="deskripsi">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-lg-8 col-md-10 col-sm-12 ">
                     <h5>
                     Kost Singgahsini Jatiwaringin Tugu 27 Tipe B Pondokgede Bekasi P1CJ168E
                     </h5>
@@ -54,21 +56,13 @@ const Detail = () => {
                 <div class="col-md-4">
                     <h5>Rp 1.000.000/Bulan</h5>
                     <div class="card mb-3 shadow w-75">
-                        <div class="card-body profile-container">
+                        <div class="card-body profile-container d-flex">
                             <Image src={user} alt="Profil 1" class="profile-img"/>
-                            <div class="profile-info">
+                            <div class="profile-info ms-3">
                                 <p>Subkhi M</p>
-                                <p class="text-muted">Anggota sejak sekitar 2 bulan yang lalu</p>
                             </div>
                         </div>
-                        <div class="info">
-                            <button class="telepon btn btn-outline-warning">
-                            <i class="fa-solid fa-phone"></i> +6285342479212</button>
-                            <button class="whatsapp rounded-3">
-                            <i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
-                        </div>
-                        <button className="btn btn-primer">Ajukan Sewa</button>
-
+                       <WhatsappButton/>
                     </div>
                 </div>
             </div>
@@ -76,5 +70,4 @@ const Detail = () => {
     </div>
     )
 }
-
 export default Detail;

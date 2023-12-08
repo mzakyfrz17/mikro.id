@@ -8,7 +8,7 @@ const Rekomendasi = () => {
             </div>
             <div class="konten-utama-rekomen">
             <div class="row">
-                <div class="col-md-3 col-sm-6 mb-3">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                     <div class="image-wrapper">
                         <Image src={rekom} alt="img-rekom"/>
                         <div class="button-container">
@@ -17,7 +17,7 @@ const Rekomendasi = () => {
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                 <div class="image-wrapper">
                 <Image src={rekom} alt="img-rekom"/>
                     <div class="button-container">
@@ -26,7 +26,7 @@ const Rekomendasi = () => {
                 </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                 <div class="image-wrapper">
                 <Image src={rekom} alt="img-rekom"/>
                     <div class="button-container">
@@ -35,7 +35,7 @@ const Rekomendasi = () => {
                 </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                 <div class="image-wrapper">
                 <Image src={rekom} alt="img-rekom"/>
                     <div class="button-container">

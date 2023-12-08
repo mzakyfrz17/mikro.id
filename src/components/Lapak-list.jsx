@@ -64,13 +64,13 @@ const LapakList = () => {
 const ItemLapak = ({ title, location, fasilitas, price }) => {
   const navigate = useNavigate();
   return (
-    <div className="col-md-3 col-sm-5 mb-4" id="item-lapak">
+    <div className="col-lg-3 col-md-4 col-sm-6 mb-4" id="item-lapak">
       <div className="card">
         <Image src={Lapak} alt="lapak" />
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="text-muted">{location}</p>
-          <div className="ini-kotak d-flex flex-row mb-2">
+          <div className="ini-kotak d-flex mb-2">
             {fasilitas.map((fasilitas, index) => (
               <div key={index} className="kotak rounded-3 mr-2">
                 <p className="fw-bold mb-0">#{fasilitas}</p>
@@ -78,7 +78,7 @@ const ItemLapak = ({ title, location, fasilitas, price }) => {
             ))}
           </div>
           <p><span className="fw-bold">Rp. {price.toLocaleString("id-ID")}</span>/Bulan</p>
-          <button className="btn btn-primer fw-bold" onClick={() => navigate('/detail')}>Pesan</button>
+          <button className="btn btn-primer" onClick={() => navigate('/detail')}>Pesan</button>
         </div>
       </div>
     </div>
