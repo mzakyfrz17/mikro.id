@@ -1,8 +1,8 @@
-import sequelize  from "sequelize";
+import {Sequelize} from "sequelize";
 
-const db = new sequelize('mikro_db', 'root', '',{
+const db = new Sequelize('upload_db','root','',{
     host: 'localhost',
-    dialect: 'mysql'
+    dialect: "mysql"
 });
 
 export default db;
