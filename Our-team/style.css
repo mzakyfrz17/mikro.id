@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.judul {
+    text-align: center;
+}
+
+.team {
+    display: flex;
+}
+
+.member-team {
+    margin: 8px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: width 0.3s, height 0.3s;
+}
+
+img:hover {
+    width: 220px;  
+    height: 220px; 
+}
+
+h4, p {
+    text-align: center;
+    font-size: 12px;
+    margin: 7px;
+}
+
+
+
+.ikon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ikon, a {
+    margin: 6px;
+    color: #6c758f;
+    transition: color 0.4s;
+}
+
+.ikon, a:hover {
+    color: #001B79;
+}
+
+.style-foto-biru {
+    background-color: #E0E9F8;
+    border-radius: 50%;
+}
+
+.style-foto-kuning {
+    background-color: #FFF7D4;
+    border-radius: 50%;
+}

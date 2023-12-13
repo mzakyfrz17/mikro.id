@@ -1,0 +1,192 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+*{
+    margin :0;
+    padding :0;
+    }
+
+header {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #FDD486;
+    border: none;
+    
+}
+
+input[type=search]
+{
+  margin-left: 70px;
+  margin-bottom: 10px;
+  width: 600px;
+  background-color: #FDD486;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #f7f3f3;
+}
+
+.judul h3 {
+    color: #4F4B4B;
+}
+
+.judul p {
+    color: #4C4C4C;
+}
+
+.kategori-lapak {
+    margin-bottom: 20px;
+}
+.kategori-lapak h5 {
+    color: #4C4C4C;
+}
+
+.kategori-lapak button {
+    padding: 10px 20px; 
+    margin: 5px; 
+    border: 1px solid #B9B28C;
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.kategori-lapak button .jual {
+    background-color: #FDD486;
+}
+.kategori-lapak button .sewa {
+    background-color: #fffefb;
+}
+
+  .kategori-lapak button:hover {
+    background-color: #deb308; 
+  }
+
+
+  .informasi-lapak h5 {
+    color: #4C4C4C;
+  }
+
+  textarea {
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 5px; 
+    height: 90px; 
+}
+
+textarea:focus {
+    outline: 1px solid #55b2ec;
+}
+
+.alamat-lapak h5 {
+    color: #4C4C4C;
+}
+
+
+
+.form-control-detail {
+    border: none;
+    border-bottom: 1px solid #ccc; 
+    border-radius: 0; 
+    outline: none; 
+    box-shadow: none; 
+    margin: 20px;
+  }
+
+.foto-lapak h5 {
+    color: #4C4C4C;
+}
+.foto-lapak-isi {
+    position: relative;
+    width: 800px; 
+    height: 200px; 
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .foto-lapak input[type="file"] {
+    display: none;
+  }
+
+  .foto-lapak label {
+    background-color: #F0E5AC;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+   border-radius: 5px;
+    transition: background-color 0.3s;
+    width: auto; 
+    display: inline-block; 
+    box-sizing: border-box; 
+    margin-top: 8px; 
+  }
+  
+  .foto-lapak label:hover {
+    background-color: #FDD486;
+  }
+  
+  .foto-lapak i {
+    margin-bottom: 8px; 
+  }
+
+  .fa-cloud-arrow-up {
+    font-size: 84px; 
+    color: #959595;
+  }
+
+  .detail h5 {
+    color: #4C4C4C;
+  }
+
+  .bawah {
+    display: flex;
+    align-items: center; 
+}
+
+  .bawah p a {
+    color: #000000;
+  }
+
+  .bawah button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #F0E5AC;
+    border: 1px solid #ccc; 
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+  .bawah button:hover {
+    background-color: #FDD486;
+  }

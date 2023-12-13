@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Mikro.Id</title>
+  </head>
+  <body>
+    <header>
+        <h3 class="fw-bold ms-5">Mikro.Id</h3>
+        <nav>
+            <button class="rounded-3">
+              <i class="fa-solid fa-bullhorn"></i>
+                <a href="#" >Iklankan Lapak</a>
+            </button>
+            <a href="#">Titipkan Lapak</a>
+            <a href="#">Masuk / Daftar</a>
+            <i class="fa-solid fa-user mt-3 fa-lg"></i>
+        </nav>
+    </header>
+    <hr>
+
+    <div class="container">
+        <div class="judul">
+            <h3 class="fw-bold">Titipkan Lapak Anda</h3>
+            <p>Silahkan lengkapi data terkait lapak atau properti</p>
+        </div>
+
+        <div class="kategori-lapak">
+            <h5 class="fw-bold">Kategori Lapak</h5>
+            <button class="jual">Jual</button>
+            <button class="btn btn-light">Sewa</button>
+        </div>
+
+        <div class="informasi-lapak ">
+            <h5 class="fw-bold">Informasi Lapak</h5>
+            <div class="form-group">
+                <input class="form-control mb-3" id="inputNamaLapak" type="text" placeholder="Judul/Nama Lapak">                
+                <textarea rows="10" placeholder="Deskripsi"></textarea>
+            </div>
+        </div>
+
+        <div class="alamat-lapak mt-2">
+            <h5 class="fw-bold">Alamat Lapak</h5>
+            <input class="form-control" id="inputAlamat" type="text" placeholder="Masukan alamat lengkap lapak">
+
+            <div class="form-group">
+                <div class="col">
+                    <input type="text" class="form-control-detail" id="provinsi" placeholder="Provinsi *">
+                <input type="text" class="form-control-detail" id="kabupaten" placeholder="Kota/Kabupaten *">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control-detail" id="kecamatan" placeholder="Kecamatan *">
+                <input type="text" class="form-control-detail" id="kelurahan" placeholder="Kelurahan *">
+            </div>
+            </div>   
+        </div>
+
+        
+        <div class="foto-lapak">
+            <h5 class="fw-bold">Foto Lapak</h5>
+            <form>
+                <div class="foto-lapak-isi">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                  <input type="file" id="file">
+                  <label for="file" class="btn-sm">Pilih Foto</label>
+                </div>
+              </form>
+        </div>
+         
+
+
+          <div class="detail">
+            <h5 class="fw-bold">Detail</h5>
+            <div class="form-group">
+                <div class="col">
+                    <input type="text" class="form-control-detail" id="luasTanah" placeholder="Luas Tanah">
+                <input type="text" class="form-control-detail" id="luasBanguna" placeholder="Luas Bangunan">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control-detail" id="sertifikasi" placeholder="Sertifikasi">
+                <input type="text" class="form-control-detail" id="fasilitas" placeholder="Fasilitas">
+            </div>
+          </div>
+
+
+          <div class="bawah">
+            <p>Dengan klik Titipkan Lapak, berarti anda telah setuju dengan semua <a href="#">Syarat dan Ketentuan Penjualan</a></p>
+            <button class="fw-bold">Titipkan Lapak</button>
+          </div>
+    </div>
+    
+
+
+
+
+    </body>
+    

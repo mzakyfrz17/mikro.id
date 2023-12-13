@@ -1,0 +1,66 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+*{
+    margin :0;
+    padding :0;
+    }
+
+header {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #FDD486;
+    border: none;
+    
+}
+
+input[type=search]
+{
+  margin-left: 70px;
+  margin-bottom: 10px;
+  width: 600px;
+  background-color: #FDD486;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #f7f3f3;
+}
+
+
+
+.judul {
+    color: #4F4B4B;
+}
+
+.teks-1 {
+    color: #544E18;
+}
+
+.btn-3 {
+    background-color: #FDD486;
+}
+

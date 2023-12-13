@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    
+}
+
+*{
+    margin :0;
+    padding :0;
+    }
+
+header {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+input[type=search]
+{
+  margin-left: 70px;
+  margin-bottom: 10px;
+  width: 600px;
+  background-color: #FDD486;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #F4E17F;
+}
+
+.sidebar {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    background-color: #eff0f0;
+    padding-top: 20px;
+    
+  }
+  .sidebar a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+  }
+  .sidebar a:hover {
+    background-color: #F4E17F;
+  }
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #F1F4F5; 
+  height: 100vh; 
+  box-sizing: border-box; 
+}
+.admin-box {
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  
+}
+.admin-box i {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.admin-box .h4 {
+    color: #000000;
+}
+
+.custom-icon {
+    color: #F4E17F; 
+  }
+
+
+h1 {
+      margin-bottom: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .action-btn {
+      padding: 5px 10px;
+      
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .edit-btn {
+      background-color: #65B741;
+    }
+    
+    .delete-btn {
+      background-color: #EF4040;
+    }
+
+    .edit-btn:hover {
+      background-color: #304D30;
+    }
+
+    .delete-btn:hover {
+      background-color: #750E21 ;
+    }
+
+    .image-cell img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+

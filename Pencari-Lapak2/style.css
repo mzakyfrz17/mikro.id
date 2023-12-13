@@ -1,0 +1,105 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+*{
+    margin :0;
+    padding :0;
+    }
+
+header {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #FDD486;
+    border: none;
+    
+}
+
+input[type=search]
+{
+  margin-left: 70px;
+  margin-bottom: 10px;
+  width: 600px;
+  background-color: #FDD486;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #f7f3f3;
+}
+
+.container {
+  margin-left: 100px;
+}
+
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  margin-right: 10px; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+}
+
+.whatsapp {
+    background-color: #13A201;
+    color: white;
+    margin-right: 40px
+}
+
+.telepon {
+    margin-left: 30px;
+}
+
+.card-body {
+    align-items: center;
+    }
+
+.kotak {
+    border: 1px solid #ccc;
+    padding: 12px;
+    height: 45px;
+    padding-bottom: 30px;
+    }
+
+.card-lapak {
+  margin-right: 100px;
+}
+
