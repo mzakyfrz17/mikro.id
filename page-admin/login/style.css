@@ -6,3 +6,7 @@
 .btn {
     background-color: #FDD486;
 }
+
+.btn:hover {
+    background-color: #F3B664;
+}
