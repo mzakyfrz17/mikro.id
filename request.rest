@@ -1,5 +1,8 @@
 GET http://localhost:5000/users
 
+###
+GET http://localhost:5000/products
+
 
 ###
 //login a admin

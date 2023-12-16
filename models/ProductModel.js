@@ -8,7 +8,9 @@ const Product = db.define('product',{
     address: DataTypes.STRING,
     price: DataTypes.INTEGER,
     image: DataTypes.STRING,
-    url: DataTypes.STRING
+    url: DataTypes.STRING,
+    desc: DataTypes.TEXT,
+    telp: DataTypes.CHAR,
 },{
     freezeTableName: true
 });

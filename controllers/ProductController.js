@@ -27,7 +27,7 @@ export const getProductById = async(req, res)=>{
 export const saveProduct = (req, res) => {
     if (req.files === null) return res.status(400).json({ msg: "No File Uploaded" });
   
-    const { title, address, price } = req.body;
+    const { title, address, price, desc, telp } = req.body;
     const file = req.files.file;
     const fileSize = file.data.length;
     const ext = path.extname(file.name);
@@ -48,6 +48,8 @@ export const saveProduct = (req, res) => {
           url: url,
           address: address,
           price: price,
+          desc: desc, 
+          telp: telp,
         });
   
         res.status(201).json({ msg: "Product Created Successfully" });
@@ -90,6 +92,8 @@ export const updateProduct = async (req, res) => {
     const name = req.body.title;
     const address = req.body.address;
     const price = req.body.price;
+    const desc = req.body.desc;
+    const telp = req.body.telp;
     const url = `${req.protocol}://${req.get("host")}/images/${fileName}`;
     try {
       await Product.update(
@@ -99,6 +103,8 @@ export const updateProduct = async (req, res) => {
           url: url,
           address: address,
           price: price,
+          desc: desc, 
+          telp: telp,
         },
         {
           where: {
