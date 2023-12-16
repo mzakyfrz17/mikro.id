@@ -1,15 +1,15 @@
 import "../style/style.css";
-import NavigasiBar from '../components/NavigasiBar';
+import NavigasiBaru from '../components/NavigasiBaru';
 import Hero from '../components/Hero';
-import LapakList from '../components/Lapak-list';
+import ProductList from "../components/Lapak-list";
 import Footer from '../components/Footer';
 
 function Lapak() {
   return (
     <div>
-      <NavigasiBar/>
+      <NavigasiBaru/>
       <Hero/>
-      <LapakList/>
+      <ProductList/>
       <Footer/>
       
     </div>

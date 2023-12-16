@@ -1,38 +1,33 @@
-import React, { useState } from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useState, useEffect } from 'react';
 import { Form, InputGroup } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+import { LoginUser, reset } from "../features/authSlice";
 
 const LoginForm = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const dispatch = useDispatch();
+  const { user, isError, isSuccess, message } = useSelector((state) => state.auth);
 
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    if (user || isSuccess) {
+      navigate("/lapak");
+    }
+    dispatch(reset());
+  }, [user, isSuccess, dispatch, navigate]);
+
+  const handleAuth = (e) => {
     e.preventDefault();
-
-    // Add your form validation logic here
-    if (validateForm()) {
-      // If the form is valid, navigate to the specified route
-      navigate('/lapak');
-    }
-  };
-
-  const validateForm = () => {
-    // Implement your form validation logic here
-    // You can check the length, format, or any other rules for email and password
-    // For simplicity, this example only checks if the fields are not empty
-
-    if (!email || !password) {
-      alert('Please fill in all fields.');
-      return false;
-    }
-
-    return true;
+    dispatch(LoginUser({ email, password }));
   };
 
   return (
     <div className='login-form'>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleAuth}>
+        {isError && <p className="has-text-centered">{message}</p>}
         <InputGroup className="mb-2">
           <Form.Control
             type="email"
@@ -54,7 +49,7 @@ const LoginForm = () => {
         </InputGroup>
 
         <div className="d-grid gap-2">
-          <button className="btn btn-primer" type="submit">
+          <button className="btn btn-primary" type="submit">
             Login
           </button>
         </div>

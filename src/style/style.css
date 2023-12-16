@@ -27,10 +27,7 @@ button, .button {
     
 }
 
-.btn-primer{
-    background-color: #9EB384 !important;
-    border: none;
-}
+
 
 input[type=search]
 {
@@ -44,6 +41,8 @@ nav {
     padding: 10px;
 }
 
+
+
 nav a {
     color: #000000;
     text-decoration: none;
@@ -51,8 +50,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #f7f3f3;
+    background-color: #ECE7B4;
+    border-radius: 10px;
 }
+
+
+
 
 .jumbotron{
     background-color: #9EB384;
@@ -109,9 +112,60 @@ nav a:hover {
     margin-right: 10px;
 }
 
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+    
+.card img {
+    display: block;
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
 .card-body {
-    align-items: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 250px;
     }
+
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;    
+}
+
+.text-muted {
+    color: #555;
+}
+
+.btn-primer {
+    background-color: #9EB384 !important;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+
+
 
 .ini-kotak{
     gap:7px;
@@ -172,4 +226,63 @@ width: 100%;
     margin-left:70%;
     position: fixed;
 }
+
+
+.sidebar {
+   height: 100vh;
+   background-color:#9EB384;
+    
+  }
+  .sidebar a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #363636;
+    display: block;
+  }
+  .sidebar a:hover {
+    background-color:#ECE7B4;
+  }
+
+.content {
+  padding: 20px; 
+  height: 100vh; 
+  box-sizing: border-box; 
+}
+
+.member-team {
+    margin: 8px;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: width 0.3s, height 0.3s;
+}
+
+.img-profile:hover {
+    width: 220px;  
+    height: 220px; 
+}
+
+.fa-brands{
+    color: grey;
+    font-size: 20px;
+}
+
+.fa-brands:hover{
+    color: #000;;
+    font-size: 30px;
+}
+.style-foto-biru {
+    background-color: #E0E9F8;
+    border-radius: 50%;
+}
+
+.style-foto-kuning {
+    background-color: #FFF7D4;
+    border-radius: 50%;
+}
+
 

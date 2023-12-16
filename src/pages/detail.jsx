@@ -1,5 +1,5 @@
-import NavigasiBar from '../components/NavigasiBar';
-import Detail from '../components/detail-lapak';
+import NavigasiBaru from '../components/NavigasiBaru';
+import ProductDetail from '../components/ProductDetail';
 import Rekomendasi from '../components/Rekomendasi';
 import Footer from '../components/Footer';
 import "../style/style.css";
@@ -7,8 +7,8 @@ import "../style/style.css";
 function DetailPage() {
   return (
     <div>
-     <NavigasiBar/>
-     <Detail/>
+     <NavigasiBaru/>
+     <ProductDetail/>
      <Rekomendasi/>
     <Footer/>
     </div>

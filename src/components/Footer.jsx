@@ -5,19 +5,19 @@ import logo from '../assets/images/Rumah.png'
 
 const Footer = () => {
     return (
-        <footer class="footer text-white ">
-    <div class="container-fluid">
-      <div class="row konten-footer">
-        <div class="col-md-4 mt-5">
-          <div class="logo text-center align-item-center">
+        <footer className="footer text-white ">
+    <div className="container-fluid">
+      <div className="row konten-footer">
+        <div className="col-md-4 mt-5">
+          <div className="logo text-center align-item-center">
             <Image src={logo} alt="Logo" width={200}/>
-            <p class="fw-bold">Mikro.Id</p>
+            <p className="fw-bold">Mikro.Id</p>
           </div>
         </div>
 
-        <div class="col-md-4 mt-5">
-          <div class="links text-right">
-            <h5 class="fw-bold">Mikro.Id</h5>
+        <div className="col-md-4 mt-5">
+          <div className="links text-right">
+            <h5 className="fw-bold">Mikro.Id</h5>
             <ul>
               <li>
                 <a href="#">Tentang Kami</a>
@@ -36,9 +36,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="col-md-4 mt-5">
-          <div class="contact text-right">
-            <h5 class="fw-bold">Hubungi Kami:</h5>
+        <div className="col-md-4 mt-5">
+          <div className="contact text-right">
+            <h5 className="fw-bold">Hubungi Kami:</h5>
             <ul>
               <li>
                 <a href="#">mikroid@gmail.com</a>
@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
     </div>
 
-    <div class="hak-cipta text-center py-2">
+    <div className="hak-cipta text-center py-2">
       <p>&copy; 2023 Mikro.Id. All rights reserved</p>
     </div>
   </footer>
