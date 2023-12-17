@@ -52,15 +52,14 @@ const Userlist = () => {
                 <td>
                   <Link
                     to={`/admin/LapakAdmin/EditUser/${user.uuid}`}
-                    className="button is-small is-info mr-1"
-                  >
-                    Edit
+                    className="btn btn-warning btn-sm">
+                    <i class="fa-regular fa-pen-to-square"></i>
                   </Link>
                   <button
                     onClick={() => deleteUser(user.uuid)}
-                    className="button is-small is-danger"
+                    className="btn btn-danger btn-sm"
                   >
-                    Delete
+                    <i class="fa-solid fa-trash"></i>
                   </button>
                 </td>
               </tr>

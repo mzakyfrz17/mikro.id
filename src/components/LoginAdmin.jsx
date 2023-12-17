@@ -16,13 +16,14 @@ const LoginAdmin = () => {
     if (user) {
       if (user.role !== 'admin') {
         dispatch(reset());
-        alert("Hanya Admin Yang Bisa Masuk");
+        alert("Only admins are allowed to log in.");
         return;
       }
       navigate("/admin/dashboard");
     }
     dispatch(reset());
   }, [user, dispatch, navigate]);
+
   const Auth = (e) => {
     e.preventDefault();
     dispatch(LoginUser({ email, password }));

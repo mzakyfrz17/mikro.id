@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 const ProductList = () => {
-  const [products, setProducts] = useState([]);
+  const [ products, setProducts ] = useState([]);
 
   useEffect(() => {
     getProducts();
@@ -23,7 +23,7 @@ const ProductList = () => {
   return (
     <div className="ml-10 px-5">
       <h1 className="title">Lapak</h1>
-      <p className="subtitle">daftar lapak </p>
+      <p className="subtitle">Daftar data lapak</p>
       <Link to="/admin/AddLapak" className="button p-2 rounded-3">
         Add New
       </Link>
@@ -41,22 +41,21 @@ const ProductList = () => {
           {products.map((product, index) => (
             <tr key={product.id}>
               <td>{index + 1}</td>
-              <td><img src={product.url}  style={{ width: '50px', height: '50px' }}/></td>
+              <td><img src={product.url} style={{ width: '50px', height: '50px' }} /></td>
               <td>{product.name}</td>
               <td>{product.price}</td>
 
               <td>
-              <Link
-  to={`/admin/LapakAdmin/EditLapak/${product.id}`}
-  className="button is-small is-info"
->
-  Edit
-</Link>
+                <Link
+                  to={`/admin/LapakAdmin/EditLapak/${product.id}`}
+                  className="btn btn-warning btn-sm">
+                 <i class="fa-regular fa-pen-to-square"></i>
+                </Link>
+
                 <button
                   onClick={() => deleteProduct(product.id)}
-                  className="button is-small is-danger"
-                >
-                  Delete
+                  className="btn btn-danger btn-sm">
+                 <i class="fa-solid fa-trash"></i>
                 </button>
               </td>
             </tr>

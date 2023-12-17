@@ -33,7 +33,7 @@ const Team = () => {
                 <div className="member-team">
                     <div className="profile text-center">
                         <div className="style-foto-kuning">
-                            <Image src={shela} className="img-profile" />
+                            <Image src={shela} className="img-profile"/>
                         </div>
 
                         <h5 className="fw-bold mt-3">Shela</h5>

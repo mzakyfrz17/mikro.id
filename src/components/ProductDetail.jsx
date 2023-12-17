@@ -76,7 +76,6 @@ const ProductDetail = () => {
           <div className="col-md-4">
             <h5>{formatCurrency(product.price)}/Bulan</h5>
             <div className="card mb-3 shadow w-75">
-             
               <button className="btn btn-primer" onClick={redirectToWhatsapp}>
                 <i className="fa-brands fa-whatsapp"></i> Whatsapp
               </button>
