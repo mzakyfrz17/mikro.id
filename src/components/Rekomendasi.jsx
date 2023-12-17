@@ -2,48 +2,28 @@ import { Image } from 'react-bootstrap';
 import rekom from '../assets/images/rekomendasi-lapak.png';
 const Rekomendasi = () => {
     return (
-        <div class="container rekomendasi mb-4 mt-4">
-            <div class="judul-rekomen text-center">
-            <p class="fw-bold fs-4 mt-3 mb-4">Rekomendasi Lapak</p>
-            </div>
-            <div class="konten-utama-rekomen">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="image-wrapper">
-                        <Image src={rekom} alt="img-rekom"/>
-                        <div class="button-container">
-                        <button class="btn button">Dekat Universitas</button>
-                        </div>
-                    </div>
+        <div class="rekomendasi mb-4 mt-3 p-4">
+            <h2 class="fw-bold text-center mb-5">Rekomendasi Lapak</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3 text-center">        
+                        <Image src={rekom} alt="img-rekom" />
+                        <p className='p-2 button rounded-3 d-inline-block'>Dekat Universitas</p>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="image-wrapper">
-                <Image src={rekom} alt="img-rekom"/>
-                    <div class="button-container">
-                    <button class="btn button">Dekat Universitas</button>
-                    </div>
-                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3 text-center">        
+                        <Image src={rekom} alt="img-rekom" />
+                        <p className='p-2 button rounded-3 d-inline-block'>Dekat Universitas</p>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="image-wrapper">
-                <Image src={rekom} alt="img-rekom"/>
-                    <div class="button-container">
-                    <button class="btn button">Dekat Universitas</button>
-                    </div>
-                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3 text-center">        
+                        <Image src={rekom} alt="img-rekom" />
+                        <p className='p-2 button rounded-3 d-inline-block'>Dekat Universitas</p>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="image-wrapper">
-                <Image src={rekom} alt="img-rekom"/>
-                    <div class="button-container">
-                    <button class="btn button">Dekat Universitas</button>
-                    </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3 text-center">        
+                        <Image src={rekom} alt="img-rekom" />
+                        <p className='p-2 button rounded-3 d-inline-block'>Dekat Universitas</p>
                 </div>
-                </div>
-            </div>
             </div>
         </div>
     )

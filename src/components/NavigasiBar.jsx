@@ -17,7 +17,7 @@ const NavigasiBar = () => {
     <>
       <nav className="navbar sticky-top navbar-expand-lg px-3">
         <div className="container-fluid align-self-center">
-          <NavLink to="/" className="navbar-brand fw-bold"><h3 >Mikro.Id</h3></NavLink>
+          <h3><NavLink to="/" className="navbar-brand fw-bold">Mikro.id</NavLink></h3>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                   aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

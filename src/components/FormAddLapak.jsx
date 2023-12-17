@@ -44,8 +44,8 @@ const FormAddProduct = () => {
 
   return (
     <div className="container mt-5">
+      <h3>Tambahkan Lapak</h3>
       <div className="row justify-content-center">
-        <div className="col-md-6">
           <form onSubmit={saveProduct}>
             <div className="mb-3">
               <label htmlFor="productName" className="form-label">
@@ -134,13 +134,12 @@ const FormAddProduct = () => {
             )}
   
             <div className="mb-3">
-              <button type="submit" className="btn btn-success">
+              <button type="submit" className="btn btn-primer">
                 simpan
               </button>
             </div>
           </form>
         </div>
-      </div>
     </div>
   );
   

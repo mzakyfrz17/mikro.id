@@ -3,8 +3,9 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 
+
 const Userlist = () => {
-  const [users, setUsers] = useState([]);
+  const [ users, setUsers ] = useState([]);
 
   useEffect(() => {
     getUsers();
@@ -13,7 +14,10 @@ const Userlist = () => {
   const getUsers = async () => {
     const response = await axios.get("http://localhost:5000/users");
     setUsers(response.data);
+    console.log(response.data)
   };
+
+
 
   const deleteUser = async (userId) => {
     await axios.delete(`http://localhost:5000/users/${userId}`);
@@ -21,12 +25,12 @@ const Userlist = () => {
   };
 
   return (
-    <div className="ml-10">
-      <h1 className="title">Users</h1>
-      <h2 className="subtitle">List of User</h2>
-          <Link to="/admin/AddUser" className="button is-primary mb-2">
-            Add New
-          </Link>
+    <div className="ml-10 px-5">
+      <h2 className="title">Users</h2>
+      <p className="subtitle">List of User</p>
+      <Link to="/admin/AddUser" className="button p-2 rounded-3">
+        Add New
+      </Link>
       <div className="table-container ">
         <table className="table is-striped is-fullwidth">
           <thead>
@@ -67,5 +71,7 @@ const Userlist = () => {
     </div>
   );
 };
+
+
 
 export default Userlist;

@@ -49,7 +49,7 @@ const LoginForm = () => {
         </InputGroup>
 
         <div className="d-grid gap-2">
-          <button className="btn btn-primary" type="submit">
+          <button className="btn btn-primer" type="submit">
             Login
           </button>
         </div>

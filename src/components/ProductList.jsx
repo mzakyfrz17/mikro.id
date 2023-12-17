@@ -21,10 +21,10 @@ const ProductList = () => {
   };
 
   return (
-    <div>
-      <h1 className="title">Products</h1>
-      <h2 className="subtitle">List of Products</h2>
-      <Link to="/admin/AddLapak" className="button is-primary mb-2">
+    <div className="ml-10 px-5">
+      <h1 className="title">Lapak</h1>
+      <p className="subtitle">daftar lapak </p>
+      <Link to="/admin/AddLapak" className="button p-2 rounded-3">
         Add New
       </Link>
       <table className="table is-striped is-fullwidth">

@@ -58,7 +58,7 @@ const LoginAdmin = () => {
             <div style={{ marginBottom: "15px" }}>
               <button
                 type="submit"
-                style={{ width: "100%", padding: "10px", backgroundColor: "#28a745", color: "#fff", border: "none", borderRadius: "3px", cursor: "pointer" }}
+                className="btn btn-primer"
               >
                 {isLoading ? "Loading..." : "Login"}
               </button>
