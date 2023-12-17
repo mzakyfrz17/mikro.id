@@ -45,7 +45,7 @@ const NavigasiBaru = () => {
                 </button>
               </li>
               <li className="nav-item me-3 ">
-                <a href="/lapak" className="nav-link active">Lapak</a>
+                <a href="#lapak" className="nav-link active">Lapak</a>
               </li>
               <button onClick={logout} className="nav-link">
               Logout <i class="fa-solid fa-right-from-bracket"></i>

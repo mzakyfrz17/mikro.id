@@ -14,7 +14,7 @@ const LapakList = () => {
   }, []);
 
   const getProducts = async () => {
-    const response = await axios.get(`http://192.168.1.14:7001/products`);
+    const response = await axios.get(`http://localhost:5000/products`);
 
     setProducts(response.data);
     console.log(response);
@@ -31,7 +31,7 @@ const LapakList = () => {
   const navigate = useNavigate();
   return (
     <div className="container mt-5 mb-3 ">
-      <h2 className="fw-bold text-center">Lapak Tersedia</h2>
+      <h2 className="fw-bold text-center" id="lapak">Lapak Tersedia</h2>
       <div className="row ">
         {products.map((product) => (
           <div className=" col-lg-3 col-md-4 col-sm-6 mb-4 " key={product.id}>
