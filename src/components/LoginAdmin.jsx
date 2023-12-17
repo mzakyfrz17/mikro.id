@@ -13,11 +13,16 @@ const LoginAdmin = () => {
   );
 
   useEffect(() => {
-    if (user || isSuccess) {
+    if (user) {
+      if (user.role !== 'admin') {
+        dispatch(reset());
+        alert("Only admins are allowed to log in.");
+        return;
+      }
       navigate("/admin/dashboard");
     }
     dispatch(reset());
-  }, [user, isSuccess, dispatch, navigate]);
+  }, [user, dispatch, navigate]);
 
   const Auth = (e) => {
     e.preventDefault();

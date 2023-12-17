@@ -14,7 +14,7 @@ const LapakList = () => {
   }, []);
 
   const getProducts = async () => {
-    const response = await axios.get(`http://192.168.1.14:7001/products`);
+    const response = await axios.get(`http://localhost:6003/products`);
 
     setProducts(response.data);
     console.log(response);
