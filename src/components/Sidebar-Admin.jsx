@@ -10,7 +10,7 @@ const SideBarAdmin = ({ handleMenuClick }) => {
     const logout = () => {
         dispatch(LogOut());
         dispatch(reset());
-        navigate("/");
+        navigate("/admin");
     };
     return (
         <div className="sidebar col-lg-2 pt-3">
@@ -24,8 +24,8 @@ const SideBarAdmin = ({ handleMenuClick }) => {
                 <p> <i className="fa-solid fa-list me-2"></i>Daftar Lapak</p>
             </a>
     
-            <button onClick={logout} className="nav-link">
-            <p><i class="fa-solid fa-right-from-bracket me-2 ms-3"></i>Logout</p>
+            <button onClick={logout} className="nav-link" id="logoutButton">
+            <p><i class="fa-solid fa-right-from-bracket me-2"></i>Logout</p>
             </button>
 
         </div>

@@ -47,43 +47,36 @@ const ProductDetail = () => {
 
   return (
     <div className="container mt-5">
-      <div className="row">
-        <div className="col-lg-8 col-md-10 col-sm-12 ">
-          <Image src={product.url} className="detail-img" id="detail1" alt="Gambar Kiri" style={{ width: '700px', height: '450px' }} />
-        </div>
+  <div className="row">
+    <div className="col-lg-8 col-md-8 col-sm-12">
+      {/* Gambar */}
+      <Image src={product.url} className="detail-img" id="detail1" alt="Gambar Kiri" style={{ width: '700px', height: '450px' }} />
+    </div>
 
-        <div className="col-md-4 mt-3">
-          <div className="row">
-            <div className="col-md-12 mb-2">
-              <img src={gambar1} className="detail-img" alt="Gambar Kanan 1" />
-            </div>
-            <div className="col-md-12">
-              <img src={gambar2} className="detail-img" alt="Gambar Kanan 2" />
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <div className="col-lg-4 col-md-4 col-sm-12">
+      {/* Deskripsi */}
       <div className="deskripsi">
-        <div className="row">
-          <div className="col-lg-8 col-md-10 col-sm-12 ">
-            <h5>{product.name}</h5>
-            <p className="text-muted">{product.address}</p>
-            <h5>Deskripsi</h5>
-            <p style={{ whiteSpace: 'pre-line' }}>{product.desc}</p>
-          </div>
+        <h5>{product.name}</h5>
+        <p className="text-muted">{product.address}</p>
+        <h5>Deskripsi</h5>
+        <p style={{ whiteSpace: 'pre-line' }}>{product.desc}</p>
+      </div>
+    </div>
 
-          <div className="col-md-4">
-            <h5>{formatCurrency(product.price)}/Bulan</h5>
-            <div className="card mb-3 shadow w-75">
-              <button className="btn btn-primer" onClick={redirectToWhatsapp}>
-                <i className="fa-brands fa-whatsapp"></i> Whatsapp
-              </button>
-            </div>
-          </div>
+    <div className="col-lg-4 col-md-4 col-sm-12 mt-4">
+      {/* Harga dan Tombol */}
+      <div className="harga-tombol">
+        <h5>{formatCurrency(product.price)}/Bulan</h5>
+        <div className="card mb-3 shadow w-75">
+          <button className="btn btn-primer" onClick={redirectToWhatsapp}>
+            <i className="fab fa-whatsapp"></i> Whatsapp
+          </button>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
   );
 };
 

@@ -1,7 +1,7 @@
 import Popup from "./Popup";
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS
+import "bootstrap/dist/css/bootstrap.min.css"; 
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
 import "../style/style.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -13,7 +13,7 @@ const NavigasiBaru = () => {
   const [ showPopup, setShowPopup ] = useState(false);
 
   const handlePopupToggle = () => {
-    setShowPopup(!showPopup); // Toggle the visibility
+    setShowPopup(!showPopup); 
   };
 
   const dispatch = useDispatch();
@@ -45,9 +45,9 @@ const NavigasiBaru = () => {
                 </button>
               </li>
               <li className="nav-item me-3 ">
-                <a href="/lapak" className="nav-link active">Lapak</a>
+                <a href="#list" className="nav-link active">Lapak</a>
               </li>
-              <button onClick={logout} className="nav-link">
+              <button onClick={logout} className="nav-link active nav-btn">
                 <i className="fa-solid fa-right-from-bracket"></i>Logout
               </button>
             </ul>

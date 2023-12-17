@@ -57,7 +57,7 @@ const Userlist = () => {
                   </Link>
                   <button
                     onClick={() => deleteUser(user.uuid)}
-                    className="btn btn-danger btn-sm"
+                    className="btn btn-danger btn-sm ms-2"
                   >
                     <i class="fa-solid fa-trash"></i>
                   </button>

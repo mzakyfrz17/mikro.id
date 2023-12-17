@@ -22,7 +22,7 @@ const ProductList = () => {
 
   return (
     <div className="ml-10 px-5">
-      <h1 className="title">Lapak</h1>
+      <h2 className="title">Lapak</h2>
       <p className="subtitle">Daftar data lapak</p>
       <Link to="/admin/AddLapak" className="button p-2 rounded-3">
         Add New
@@ -54,7 +54,7 @@ const ProductList = () => {
 
                 <button
                   onClick={() => deleteProduct(product.id)}
-                  className="btn btn-danger btn-sm">
+                  className="btn btn-danger btn-sm ms-2">
                  <i class="fa-solid fa-trash"></i>
                 </button>
               </td>

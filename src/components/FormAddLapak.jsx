@@ -7,7 +7,7 @@ const FormAddProduct = () => {
   const [title, setTitle] = useState("");
   const [address, setAddress] = useState("");
   const [price, setPrice] = useState("");
-  const [desc, setDesc] = useState(""); // Tambahkan state untuk desc
+  const [desc, setDesc] = useState(""); 
   const [telp, setTelp] = useState(""); 
   const [file, setFile] = useState("");
   const [preview, setPreview] = useState("");
@@ -26,7 +26,7 @@ const FormAddProduct = () => {
     formData.append("title", title);
     formData.append("address", address);
     formData.append("price", price);
-    formData.append("desc", desc); // Tambahkan field desc ke FormData
+    formData.append("desc", desc);
     formData.append("telp", `${telp}`);
 
 
@@ -36,7 +36,7 @@ const FormAddProduct = () => {
           "Content-type": "multipart/form-data",
         },
       });
-      navigate("/admin/LapakAdmin");
+      navigate("/admin/dashboard");
     } catch (error) {
       console.log(error);
     }
@@ -57,7 +57,7 @@ const FormAddProduct = () => {
                 id="productName"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                placeholder="Judul"
+                placeholder="Masukan Judul"
               />
             </div>
   
@@ -71,7 +71,7 @@ const FormAddProduct = () => {
                 id="productAddress"
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
-                placeholder="jl. wahid hasyim RT 05 RW 05 sukamaju, singingi hilir sumatra selatan"
+                placeholder="Masukan Alamat"
               />
             </div>
   
@@ -98,7 +98,7 @@ const FormAddProduct = () => {
                 id="productPrice"
                 value={telp}
                 onChange={(e) => setTelp(e.target.value)}
-                placeholder="086524389265"
+                placeholder="08xxxxxxxxxx"
               />
             </div>
   

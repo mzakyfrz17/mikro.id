@@ -60,7 +60,7 @@ const EditProduct = () => {
         },
       });
 
-      navigate("/lapak");
+      navigate("/admin/dashboard");
     } catch (error) {
       console.error("Error updating product:", error);
     }

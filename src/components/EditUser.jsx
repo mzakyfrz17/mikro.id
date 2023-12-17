@@ -38,7 +38,7 @@ const FormEditUser = () => {
         confPassword: confPassword,
         role: role,
       });
-      navigate("/admin/ListUser");
+      navigate("/admin/dashboard");
     } catch (error) {
       if (error.response) {
         setMsg(error.response.data.msg);
@@ -47,8 +47,10 @@ const FormEditUser = () => {
   };
   return (
     <div>
-      <h1 className="title">Users</h1>
-      <h2 className="subtitle">Update User</h2>
+      <div className="edit-user-container">
+      <div className="edit-user">
+      <h1 className="title-user">Users</h1>
+      <h4 className="subtitle">Update User</h4>
       <div className="content">
         <form onSubmit={updateUser}>
           <p className="has-text-centered">{msg}</p>
@@ -116,13 +118,15 @@ const FormEditUser = () => {
           </div>
           <div className="field">
             <div className="control">
-              <button type="submit" className="btn btn-primer">
+              <button type="submit" className="btn btn-primer mt-2">
                 Update
               </button>
             </div>
           </div>
         </form>
       </div>
+    </div>
+    </div>
     </div>
   );
 };

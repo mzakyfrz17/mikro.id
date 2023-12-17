@@ -20,10 +20,7 @@ const Footer = () => {
             <h5 className="fw-bold">Mikro.Id</h5>
             <ul>
               <li>
-                <a href="#">Tentang Kami</a>
-              </li>
-              <li>
-                <a href="#">Daftar Lapak</a>
+                <a href="#profil">Tentang Kami</a>
               </li>
               <li>
                 <a href="#">Promosikan Lapak Anda</a>

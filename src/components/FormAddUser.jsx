@@ -21,13 +21,14 @@ const FormAddUser = () => {
         confPassword: confPassword,
         role: role,
       });
-      navigate("/admin/ListUser");
+      navigate("/admin/dashboard");
     } catch (error) {
       if (error.response) {
         setMsg(error.response.data.msg);
       }
     }
   };
+
   return (
     <div className="container p-3 mt-2">
       <h1 className="title">Users</h1>
@@ -69,7 +70,7 @@ const FormAddUser = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="******"
               />
-            </div>
+</div>
           </div>
           <div className="field">
             <label className="form-label">Confirm Password</label>
@@ -84,13 +85,14 @@ const FormAddUser = () => {
             </div>
           </div>
           <div className="field">
-            <label className="form-label">Role</label>
+          <label className="form-label">Role</label>
             <div className="control">
               <div className="select is-fullwidth">
                 <select
                   value={role}
                   onChange={(e) => setRole(e.target.value)}
                 >
+                  <option >---</option>
                   <option value="admin">Admin</option>
                   <option value="user">User</option>
                 </select>
@@ -102,7 +104,7 @@ const FormAddUser = () => {
               <button type="submit" className="btn btn-primer">
                 Save
               </button>
-            </div>
+              </div>
           </div>
         </form>
       </div>
@@ -110,4 +112,4 @@ const FormAddUser = () => {
   );
 };
 
-export default FormAddUser;
+export default FormAddUser;

@@ -11,9 +11,9 @@ const DashboardAdmin=()=> {
   };
 
   return (
-    <div className="d-flex">
+    <div className="d-flex ">
       <SideBarAdmin handleMenuClick={handleMenuClick} />
-      <div className="content col-lg-10">
+      <div className="content col-lg-10 right-content-dash">
         {selectedMenu === 'dashboard' && (
           <>
             <h1 id="dashboard">Dashboard</h1>
